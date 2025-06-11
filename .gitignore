@@ -1,0 +1,12 @@
+Logs
+Pakages
+Library
+UserSettings
+*.csproj
+*.pidb
+*.sln
+*.userprefs
+*.unityproj
+*.DS_Store
+Library/
+Temp/
