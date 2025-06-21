@@ -4,15 +4,17 @@ using UnityEngine.InputSystem;
 public class Movement : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     private PlayerInput playerInput;
     private InputAction moveAction;
-    public CharacterInput characterInputManager;
     public float flySpeed = 5f;
     public InputAction HoldAction { get; set; }
+    CircleCollider2D playerCollider; // Collider for the player
     private Rigidbody2D rb;
 
     void Start()
     {
+        playerCollider = GetComponent<CircleCollider2D>(); // Get the CircleCollider2D component attached to the player
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -42,17 +44,7 @@ public class Movement : MonoBehaviour
     }
     private void Awake()
     {
-        characterInputManager = new CharacterInput();
-        characterInputManager.Enable();
-        HoldAction = characterInputManager.Movement.Fly;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            // Reset the player's position or perform any other logic when colliding with the ground
-            Debug.Log("Collided with enemy");
-        }
+        playerInput = GetComponent<PlayerInput>();
+        HoldAction = playerInput.actions["Fly"];
     }
 }
