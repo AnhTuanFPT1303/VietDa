@@ -3,32 +3,34 @@ using UnityEngine;
 public class EnemySpawn : MonoBehaviour
 {
     public GameObject enemyPrefab;
+    public float spawnTimer;
+    public float spawnInterval;
+    [SerializeField] private Transform minPosition; // Minimum position for spawning
+    [SerializeField] private Transform maxPosition; // Maximum position for spawning
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        StartCoroutine(SpawnWithDelay());
-    }
 
     // Update is called once per frame
     void Update()
     {
-
-    }
-    System.Collections.IEnumerator SpawnWithDelay()
-    {
-        while (true) // Infinite loop to keep spawning enemies
+        spawnTimer += Time.deltaTime; // Increment the spawn timer by the time since the last frame
+        if (spawnTimer >= spawnInterval) // Check if the spawn timer has reached the spawn interval
         {
-            SpawnEnemyAtRandomPosition();
-            yield return new WaitForSeconds(2f); // Wait for 2 seconds before spawning the next enemy
+            spawnTimer = 0f; // Reset the spawn timer
+            SpawnEnemyAtRandomPosition(); // Call the method to spawn an enemy at a random position
+            
         }
     }
+   
     void SpawnEnemyAtRandomPosition()
     {
-        // Get screen bounds in world coordinates
-        // Generate a random position within the screen bounds
-        float fixedX = 10.5f;
-        float rangeY = Random.Range(-3.5f, 3.5f);
-        Vector2 spawnPosition = new Vector2(fixedX, rangeY);
-        Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+        Instantiate(enemyPrefab, RandomSpawnPoint(), Quaternion.identity);
+    }
+
+    private Vector2 RandomSpawnPoint()
+    {
+        Vector2 spawnPoint;
+        spawnPoint.x = minPosition.position.x;
+        spawnPoint.y = Random.Range(minPosition.position.y, maxPosition.position.y);
+        return spawnPoint;
     }
 }

@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\PRU222\\Sample\\VietDa\\",
+  "WorkspaceRootPath": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|d:\\pru222\\sample\\vietda\\assets\\scripts\\vietda\\characters\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|D:\\FBT\\7\\PRU212\\Project\\VietDa\\assets\\scripts\\vietda\\characters\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vietda\\characters\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|d:\\fbt\\7\\pru212\\project\\vietda\\assets\\scripts\\vietda\\enemies\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vietda\\enemies\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|d:\\fbt\\7\\pru212\\project\\vietda\\assets\\scripts\\vietda\\enemies\\enemyspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vietda\\enemies\\enemyspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,37 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\Assets\\Scripts\\VietDa\\Enemies\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\VietDa\\Enemies\\Enemy.cs",
+              "ToolTip": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\Assets\\Scripts\\VietDa\\Enemies\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\VietDa\\Enemies\\Enemy.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T09:47:13.519Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemySpawn.cs",
+              "DocumentMoniker": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\Assets\\Scripts\\VietDa\\Enemies\\EnemySpawn.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\VietDa\\Enemies\\EnemySpawn.cs",
+              "ToolTip": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\Assets\\Scripts\\VietDa\\Enemies\\EnemySpawn.cs",
+              "RelativeToolTip": "Assets\\Scripts\\VietDa\\Enemies\\EnemySpawn.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAywBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T09:10:59.855Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Movement.cs",
-              "DocumentMoniker": "D:\\PRU222\\Sample\\VietDa\\Assets\\Scripts\\VietDa\\Characters\\Movement.cs",
+              "DocumentMoniker": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\Assets\\Scripts\\VietDa\\Characters\\Movement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\VietDa\\Characters\\Movement.cs",
-              "ToolTip": "D:\\PRU222\\Sample\\VietDa\\Assets\\Scripts\\VietDa\\Characters\\Movement.cs",
+              "ToolTip": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\Assets\\Scripts\\VietDa\\Characters\\Movement.cs",
               "RelativeToolTip": "Assets\\Scripts\\VietDa\\Characters\\Movement.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAywCIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T09:12:35.525Z",
               "EditorCaption": ""
