@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\PRU222\\Sample\\VietDa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|d:\\pru222\\sample\\vietda\\assets\\scripts\\vietda\\enemies\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vietda\\enemies\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|d:\\pru222\\sample\\vietda\\assets\\scripts\\bombman\\characters\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bombman\\characters\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|d:\\pru222\\sample\\vietda\\assets\\scripts\\vietda\\enemies\\enemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vietda\\enemies\\enemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|D:\\PRU222\\Sample\\VietDa\\assets\\scripts\\vietda\\enemies\\enemyspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vietda\\enemies\\enemyspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PRU222\\Sample\\VietDa\\Assets\\Scripts\\VietDa\\Characters\\CharacterInputManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\VietDa\\Characters\\CharacterInputManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|d:\\pru222\\sample\\vietda\\assets\\scripts\\bombman\\slime_bomb\\knockback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bombman\\slime_bomb\\knockback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,53 +42,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "D:\\PRU222\\Sample\\VietDa\\Assets\\Scripts\\VietDa\\Enemies\\Enemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\VietDa\\Enemies\\Enemy.cs",
-              "ToolTip": "D:\\PRU222\\Sample\\VietDa\\Assets\\Scripts\\VietDa\\Enemies\\Enemy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\VietDa\\Enemies\\Enemy.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCMAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T18:35:03.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Enemies.cs",
-              "DocumentMoniker": "D:\\PRU222\\Sample\\VietDa\\Assets\\Scripts\\VietDa\\Enemies\\Enemies.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\VietDa\\Enemies\\Enemies.cs",
-              "ToolTip": "D:\\PRU222\\Sample\\VietDa\\Assets\\Scripts\\VietDa\\Enemies\\Enemies.cs",
-              "RelativeToolTip": "Assets\\Scripts\\VietDa\\Enemies\\Enemies.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBgAAAAEAAAAAAAAAA==",
+              "Title": "Knockback.cs",
+              "DocumentMoniker": "D:\\PRU222\\Sample\\VietDa\\Assets\\Scripts\\Bombman\\Slime_bomb\\Knockback.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Bombman\\Slime_bomb\\Knockback.cs",
+              "ToolTip": "D:\\PRU222\\Sample\\VietDa\\Assets\\Scripts\\Bombman\\Slime_bomb\\Knockback.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Bombman\\Slime_bomb\\Knockback.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAuwC8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T18:32:28.248Z",
+              "WhenOpened": "2025-07-05T14:38:37.953Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EnemySpawn.cs",
-              "DocumentMoniker": "D:\\PRU222\\Sample\\VietDa\\Assets\\Scripts\\VietDa\\Enemies\\EnemySpawn.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\VietDa\\Enemies\\EnemySpawn.cs",
-              "ToolTip": "D:\\PRU222\\Sample\\VietDa\\Assets\\Scripts\\VietDa\\Enemies\\EnemySpawn.cs",
-              "RelativeToolTip": "Assets\\Scripts\\VietDa\\Enemies\\EnemySpawn.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Movement.cs",
+              "DocumentMoniker": "D:\\PRU222\\Sample\\VietDa\\Assets\\Scripts\\Bombman\\Characters\\Movement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Bombman\\Characters\\Movement.cs",
+              "ToolTip": "D:\\PRU222\\Sample\\VietDa\\Assets\\Scripts\\Bombman\\Characters\\Movement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Bombman\\Characters\\Movement.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAEwEMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T18:32:22.016Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CharacterInputManager.cs",
-              "DocumentMoniker": "D:\\PRU222\\Sample\\VietDa\\Assets\\Scripts\\VietDa\\Characters\\CharacterInputManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\VietDa\\Characters\\CharacterInputManager.cs",
-              "ToolTip": "D:\\PRU222\\Sample\\VietDa\\Assets\\Scripts\\VietDa\\Characters\\CharacterInputManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\VietDa\\Characters\\CharacterInputManager.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T10:59:28.02Z"
+              "WhenOpened": "2025-07-05T14:32:43.37Z",
+              "EditorCaption": ""
             }
           ]
         }
