@@ -4,12 +4,33 @@ using UnityEngine.Tilemaps; // Bắt buộc phải có để làm việc với T
 
 public class Slime_bomb : MonoBehaviour
 {
-    [Header("Cài đặt Vụ Nổ")]
     public int explosionTileRadius = 1;      // Bán kính nổ (tính bằng số ô gạch)
     public GameObject explosionEffectPrefab; // Prefab hiệu ứng nổ (tùy chọn)
-
     [Header("Cài đặt Đẩy Lùi")]
     public float pushForce = 20f;           // Lực đẩy người chơi
+    public float explosionRadius = 1f;      // Explosion radius in tiles
+    public int pushDistance = 7;            // How many blocks to push the player
+    public float pushForce = 20f;           // Force to push players
+    public GameObject explosionEffectPrefab; // Visual effect for explosion
+    private Knockback knockback;
+    private Animator animator;
+    AudioSource audioSource;
+    void Start()
+    {
+        // Initialize the Knockback component
+        knockback = GetComponent<Knockback>();
+        if (knockback == null)
+        {
+            Debug.LogWarning("Knockback component not found on the bomb!");
+        }
+        audioSource = GetComponent<AudioSource>();
+        // Initialize the Animator component
+        animator = GetComponent<Animator>();
+        if (animator == null)
+        {
+            Debug.LogWarning("Animator component not found on the bomb!");
+        }
+    }
 
     // Hàm này được gọi khi script được khởi tạo
     void Start()
@@ -29,13 +50,30 @@ public class Slime_bomb : MonoBehaviour
         PushPlayersInRadius();
 
         // Hiển thị hiệu ứng nổ nếu có
+        // Update scale to (7, 7, current z) when exploding
+        transform.localScale = new Vector3(7f, 7f, transform.localScale.z);
+        audioSource.Play(); // Play explosion sound
+        // Trigger the explosion animation
+        if (animator != null)
+        {
+            animator.SetBool("IsExploding", true);
+        }
+
+        // Create plus-shaped explosion pattern
+        CheckAndPush(Vector2.up);
+        CheckAndPush(Vector2.down);
+        CheckAndPush(Vector2.left);
+        CheckAndPush(Vector2.right);
+        CheckAndPush(Vector2.zero); // Center point
+
+        // Show explosion effect
         if (explosionEffectPrefab != null)
         {
             Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
         }
 
-        // Tự phá hủy quả bom sau khi đã nổ
-        Destroy(gameObject);
+        // Destroy the bomb after a short delay to allow animation to play
+        Destroy(gameObject, 1f);
     }
 
     /// <summary>
