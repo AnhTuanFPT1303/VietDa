@@ -5,7 +5,7 @@ using UnityEngine.Tilemaps; // Bắt buộc phải có để làm việc với T
 public class Slime_bomb : MonoBehaviour
 {
     [Header("Cài đặt Vụ Nổ")]
-    public int explosionTileRadius = 2;      // Bán kính nổ (tính bằng số ô gạch)
+    public int explosionTileRadius = 1;      // Bán kính nổ (tính bằng số ô gạch)
     public GameObject explosionEffectPrefab; // Prefab hiệu ứng nổ (tùy chọn)
 
     [Header("Cài đặt Đẩy Lùi")]

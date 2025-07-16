@@ -4,11 +4,11 @@ using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
-    public CharacterController characterController; 
+    public CharacterController characterController;
     private PlayerInput playerInput;
     public float moveSpeed = 20f;
     public Animator animator;
-    BoxCollider2D playerCollider; 
+    BoxCollider2D playerCollider;
     private Rigidbody2D rb;
     [SerializeField] GameObject bombObject;
     public InputAction MoveAction { get; set; }
@@ -19,10 +19,9 @@ public class Movement : MonoBehaviour
     private float airGravity = 35;
     public bool isBeingKnockbacked = false; // Flag controlled by Knockback script
 
-    public int maxBombs = 1; // Maximum bombs player can place
     void Start()
     {
-        playerCollider = GetComponent<BoxCollider2D>(); 
+        playerCollider = GetComponent<BoxCollider2D>();
         rb = GetComponent<Rigidbody2D>();
         playerInput = GetComponent<PlayerInput>();
         MoveAction = playerInput.actions["Move"];
@@ -61,65 +60,58 @@ public class Movement : MonoBehaviour
     {
         if (isBeingKnockbacked)
         {
-            rb.gravityScale = normalGravity; // Bomb knockback always uses normal gravity
+            rb.gravityScale = 0; // Disable gravity during bomb knockback
         }
         else if (!IsGrounded())
         {
-            rb.gravityScale = airGravity; // In air without knockback
+            rb.gravityScale = airGravity; // Use air gravity when off the ground
         }
         else
         {
-            rb.gravityScale = normalGravity; // Default when grounded
+            rb.gravityScale = normalGravity; // Use normal gravity when on the ground
         }
     }
 
+    // Use a BoxCast downward from the player's collider to determine ground
     private bool IsGrounded()
     {
-        if (playerCollider.IsTouchingLayers(LayerMask.GetMask("Ground")) || playerCollider.IsTouchingLayers(LayerMask.GetMask("Bomb")))
-            return true;
-        else return false;
+        float extraHeight = 0.1f;
+        LayerMask groundMask = LayerMask.GetMask("Ground", "Bomb");
+        RaycastHit2D hit = Physics2D.BoxCast(playerCollider.bounds.center, playerCollider.bounds.size, 0f, Vector2.down, extraHeight, groundMask);
+        return hit.collider != null;
     }
 
     private void Bomb()
     {
+        if (!IsGrounded())
+            return;
+
         if (Keyboard.current.jKey.wasPressedThisFrame)
         {
-            if (!IsGrounded())
-            {
-                Debug.Log("Is not grounded");
-                return;
-            }
-
-            if (placedBombs.Count >= maxBombs)
-            {
-                Debug.Log("MaxBomb");
-                return;
-            }
-
             // Get the player's current position
             Vector2 playerPosition = transform.position;
-            
+
             // Spawn bomb at player's position
             GameObject newBomb = Instantiate(bombObject, playerPosition, Quaternion.identity);
-            
+
             // Add bomb to our list to track it
             placedBombs.Add(newBomb);
-            
+
             // Calculate position above the bomb based on collider sizes
             float playerHeight = playerCollider.bounds.size.y;
             float bombHeight = 0;
-            
+
             // Try to get the bomb's collider if it has one
             Collider2D bombCollider = newBomb.GetComponent<Collider2D>();
             if (bombCollider != null)
             {
                 bombHeight = bombCollider.bounds.size.y;
             }
-            
+
             // Move player to position above bomb (with slight offset to prevent collision)
             Vector2 newPosition = playerPosition + new Vector2(0, (bombHeight + playerHeight) / 2);
             transform.position = newPosition;
-            
+
             // Add a small upward impulse to make it feel more natural
             rb.AddForce(Vector2.up * 5f, ForceMode2D.Impulse);
         }

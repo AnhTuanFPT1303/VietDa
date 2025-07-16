@@ -213,10 +213,7 @@ MonoBehaviour:
   animator: {fileID: 643831896166084029}
   bombObject: {fileID: 3832963363973914241, guid: 042f1deb25b72c347ba858bb12f47f5c, type: 3}
   canMove: 1
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  groundCheckDistance: 0.2
+  isBeingKnockbacked: 0
 --- !u!95 &643831896166084029
 Animator:
   serializedVersion: 7
@@ -252,7 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 121630221159499963}
-  strength: 13.5
+  strength: 6
   delay: 0.2
   OnBegin:
     m_PersistentCalls:

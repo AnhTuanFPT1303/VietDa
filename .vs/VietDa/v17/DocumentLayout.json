@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|D:\\FBT\\7\\PRU212\\Project\\VietDa\\assets\\scripts\\bombman\\slime_bomb\\slime_bomb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|D:\\FBT\\7\\PRU212\\Project\\VietDa\\assets\\scripts\\bombman\\characters\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bombman\\characters\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|d:\\fbt\\7\\pru212\\project\\vietda\\assets\\scripts\\bombman\\slime_bomb\\slime_bomb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bombman\\slime_bomb\\slime_bomb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,11 +19,11 @@
       "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|d:\\fbt\\7\\pru212\\project\\vietda\\assets\\scripts\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|D:\\FBT\\7\\PRU212\\Project\\VietDa\\assets\\scripts\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|d:\\fbt\\7\\pru212\\project\\vietda\\assets\\scripts\\collectibleitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|D:\\FBT\\7\\PRU212\\Project\\VietDa\\assets\\scripts\\collectibleitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\collectibleitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|D:\\FBT\\7\\PRU212\\Project\\VietDa\\assets\\scripts\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|D:\\FBT\\7\\PRU212\\Project\\VietDa\\assets\\scripts\\bombman\\characters\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bombman\\characters\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|D:\\FBT\\7\\PRU212\\Project\\VietDa\\assets\\scripts\\vietda\\characters\\characterinputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DoorController.cs",
               "DocumentMoniker": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\Assets\\Scripts\\DoorController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DoorController.cs",
@@ -66,12 +66,11 @@
               "RelativeToolTip": "Assets\\Scripts\\DoorController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T03:41:04.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T03:41:04.389Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CollectibleItem.cs",
               "DocumentMoniker": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\Assets\\Scripts\\CollectibleItem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CollectibleItem.cs",
@@ -79,12 +78,11 @@
               "RelativeToolTip": "Assets\\Scripts\\CollectibleItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T03:20:28.502Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T03:20:28.502Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -92,12 +90,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAUwDoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T02:22:32.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T02:22:32.095Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PlayerDeath.cs",
               "DocumentMoniker": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\Assets\\Scripts\\PlayerDeath.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerDeath.cs",
@@ -109,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Checkpoint.cs",
               "DocumentMoniker": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\Assets\\Scripts\\Checkpoint.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Checkpoint.cs",
@@ -145,13 +142,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Slime_bomb.cs",
               "DocumentMoniker": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\Assets\\Scripts\\Bombman\\Slime_bomb\\Slime_bomb.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bombman\\Slime_bomb\\Slime_bomb.cs",
               "ToolTip": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\Assets\\Scripts\\Bombman\\Slime_bomb\\Slime_bomb.cs",
               "RelativeToolTip": "Assets\\Scripts\\Bombman\\Slime_bomb\\Slime_bomb.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAzwG4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA1wG4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-15T13:22:14.905Z",
               "EditorCaption": ""
@@ -170,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Knockback.cs",
               "DocumentMoniker": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\Assets\\Scripts\\Bombman\\Slime_bomb\\Knockback.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bombman\\Slime_bomb\\Knockback.cs",
@@ -178,20 +175,20 @@
               "RelativeToolTip": "Assets\\Scripts\\Bombman\\Slime_bomb\\Knockback.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T14:38:37.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T14:38:37.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Movement.cs",
               "DocumentMoniker": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\Assets\\Scripts\\Bombman\\Characters\\Movement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bombman\\Characters\\Movement.cs",
               "ToolTip": "D:\\FBT\\7\\PRU212\\Project\\VietDa\\Assets\\Scripts\\Bombman\\Characters\\Movement.cs",
               "RelativeToolTip": "Assets\\Scripts\\Bombman\\Characters\\Movement.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAiwFgAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAkwI8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T14:32:43.37Z"
+              "WhenOpened": "2025-07-05T14:32:43.37Z",
+              "EditorCaption": ""
             }
           ]
         }
