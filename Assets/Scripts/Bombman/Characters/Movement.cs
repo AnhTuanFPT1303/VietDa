@@ -4,11 +4,11 @@ using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
-    public CharacterController characterController; 
+    public CharacterController characterController;
     private PlayerInput playerInput;
     public float moveSpeed = 20f;
     public Animator animator;
-    BoxCollider2D playerCollider; 
+    BoxCollider2D playerCollider;
     private Rigidbody2D rb;
     [SerializeField] GameObject bombObject;
     public InputAction MoveAction { get; set; }
@@ -21,7 +21,7 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
-        playerCollider = GetComponent<BoxCollider2D>(); 
+        playerCollider = GetComponent<BoxCollider2D>();
         rb = GetComponent<Rigidbody2D>();
         playerInput = GetComponent<PlayerInput>();
         MoveAction = playerInput.actions["Move"];
@@ -90,28 +90,28 @@ public class Movement : MonoBehaviour
         {
             // Get the player's current position
             Vector2 playerPosition = transform.position;
-            
+
             // Spawn bomb at player's position
             GameObject newBomb = Instantiate(bombObject, playerPosition, Quaternion.identity);
-            
+
             // Add bomb to our list to track it
             placedBombs.Add(newBomb);
-            
+
             // Calculate position above the bomb based on collider sizes
             float playerHeight = playerCollider.bounds.size.y;
             float bombHeight = 0;
-            
+
             // Try to get the bomb's collider if it has one
             Collider2D bombCollider = newBomb.GetComponent<Collider2D>();
             if (bombCollider != null)
             {
                 bombHeight = bombCollider.bounds.size.y;
             }
-            
+
             // Move player to position above bomb (with slight offset to prevent collision)
             Vector2 newPosition = playerPosition + new Vector2(0, (bombHeight + playerHeight) / 2);
             transform.position = newPosition;
-            
+
             // Add a small upward impulse to make it feel more natural
             rb.AddForce(Vector2.up * 5f, ForceMode2D.Impulse);
         }

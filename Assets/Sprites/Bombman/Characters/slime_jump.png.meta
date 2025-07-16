@@ -324,6 +324,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2034,7 +2047,84 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slime_jump_0: 3392966208300966758
+      slime_jump_1: -7020169640972223087
+      slime_jump_10: 3767683880099541764
+      slime_jump_11: 6151036930328300869
+      slime_jump_12: -7234663766303258524
+      slime_jump_13: 6525283140768795545
+      slime_jump_14: -460478250396072606
+      slime_jump_15: 1822932761830739704
+      slime_jump_16: 8695299829335985042
+      slime_jump_17: 3727878818381550522
+      slime_jump_18: -971787755865824406
+      slime_jump_19: -3491353998308723056
+      slime_jump_2: -5139682283570628478
+      slime_jump_20: 8279961872873871560
+      slime_jump_21: -7541205286962691385
+      slime_jump_22: -559323710931718793
+      slime_jump_23: 2917853270170197099
+      slime_jump_24: -8345753096008871576
+      slime_jump_25: -6092519677976197694
+      slime_jump_26: -7772324264625253745
+      slime_jump_27: 7909469959886467586
+      slime_jump_28: -3063696997994139542
+      slime_jump_29: 9084958549585279984
+      slime_jump_3: -8482318855872546559
+      slime_jump_30: 460272481165822369
+      slime_jump_31: 8024370823158703316
+      slime_jump_32: -8164282606597172459
+      slime_jump_33: 442244783389406203
+      slime_jump_34: -563223992664004122
+      slime_jump_35: 4314134367994912730
+      slime_jump_36: 8209487681558421902
+      slime_jump_37: -8894683566476397911
+      slime_jump_38: 7435218627642257227
+      slime_jump_39: -8642758742011949546
+      slime_jump_4: -7050137547198369393
+      slime_jump_40: 227790400816817026
+      slime_jump_41: 4625406189930210519
+      slime_jump_42: 5200427064988350715
+      slime_jump_43: -5903960210719055582
+      slime_jump_44: -366608879963256176
+      slime_jump_45: 7461358220166084367
+      slime_jump_46: 1101676587370906656
+      slime_jump_47: -6724656216354262363
+      slime_jump_48: -455377894321438866
+      slime_jump_49: -9092262515072513364
+      slime_jump_5: -2679807461761801379
+      slime_jump_50: -7954675933967044795
+      slime_jump_51: 2045461764206634840
+      slime_jump_52: 3910242520184623053
+      slime_jump_53: -4069555622683096511
+      slime_jump_54: -1093274064702785739
+      slime_jump_55: -2694179424006718302
+      slime_jump_56: 5250194525657125365
+      slime_jump_57: -5742736101035923581
+      slime_jump_58: -8131735514457020257
+      slime_jump_59: -8405654874745765493
+      slime_jump_6: 8234145698625636582
+      slime_jump_60: 2983964326638949491
+      slime_jump_61: 2198483199511630217
+      slime_jump_62: 9208913225715127952
+      slime_jump_63: -6993402702209000281
+      slime_jump_64: 1635626405384871928
+      slime_jump_65: -7852492883570415100
+      slime_jump_66: -3403850212700402579
+      slime_jump_67: 1274313898683608037
+      slime_jump_68: -205965167708425695
+      slime_jump_69: 6085272461710611394
+      slime_jump_7: -7355556027189763617
+      slime_jump_70: -5299386165679337751
+      slime_jump_71: -2532670101895828596
+      slime_jump_72: 6989969382303630818
+      slime_jump_73: -3911722817790241058
+      slime_jump_74: 1598823128550447032
+      slime_jump_75: -6527776658354135281
+      slime_jump_76: 4529173302465983458
+      slime_jump_8: 8752622522303831588
+      slime_jump_9: 717860036772789398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

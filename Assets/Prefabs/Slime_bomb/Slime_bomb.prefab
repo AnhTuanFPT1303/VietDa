@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -505793245132571714}
   m_Layer: 8
   m_Name: Slime_bomb
-  m_TagString: Untagged
+  m_TagString: Bomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,10 +104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f12a61e21d3bfbe4cacd0e121dd25401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionRadius: 1
-  pushDistance: 7
-  pushForce: 20
+  explosionTileRadius: 1
   explosionEffectPrefab: {fileID: 0}
+  pushForce: 6
 --- !u!50 &-774064645134487686
 Rigidbody2D:
   serializedVersion: 5
