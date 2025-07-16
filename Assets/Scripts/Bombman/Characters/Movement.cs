@@ -19,7 +19,6 @@ public class Movement : MonoBehaviour
     private float airGravity = 35;
     public bool isBeingKnockbacked = false; // Flag controlled by Knockback script
 
-
     void Start()
     {
         playerCollider = GetComponent<BoxCollider2D>(); 
@@ -61,27 +60,32 @@ public class Movement : MonoBehaviour
     {
         if (isBeingKnockbacked)
         {
-            rb.gravityScale = normalGravity; // Bomb knockback always uses normal gravity
+            rb.gravityScale = 0; // Disable gravity during bomb knockback
         }
         else if (!IsGrounded())
         {
-            rb.gravityScale = airGravity; // In air without knockback
+            rb.gravityScale = airGravity; // Use air gravity when off the ground
         }
         else
         {
-            rb.gravityScale = normalGravity; // Default when grounded
+            rb.gravityScale = normalGravity; // Use normal gravity when on the ground
         }
     }
 
+    // Use a BoxCast downward from the player's collider to determine ground
     private bool IsGrounded()
     {
-        if (playerCollider.IsTouchingLayers(LayerMask.GetMask("Ground")) || playerCollider.IsTouchingLayers(LayerMask.GetMask("Bomb")))
-            return true;
-        else return false;
+        float extraHeight = 0.1f;
+        LayerMask groundMask = LayerMask.GetMask("Ground", "Bomb");
+        RaycastHit2D hit = Physics2D.BoxCast(playerCollider.bounds.center, playerCollider.bounds.size, 0f, Vector2.down, extraHeight, groundMask);
+        return hit.collider != null;
     }
 
     private void Bomb()
     {
+        if (!IsGrounded())
+            return;
+
         if (Keyboard.current.jKey.wasPressedThisFrame)
         {
             // Get the player's current position

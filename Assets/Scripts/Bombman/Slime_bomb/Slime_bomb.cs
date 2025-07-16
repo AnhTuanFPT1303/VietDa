@@ -8,7 +8,8 @@ public class Slime_bomb : MonoBehaviour
     public float pushForce = 20f;           // Force to push players
     public GameObject explosionEffectPrefab; // Visual effect for explosion
     private Knockback knockback;
-
+    private Animator animator;
+    AudioSource audioSource;
     void Start()
     {
         // Initialize the Knockback component
@@ -16,6 +17,13 @@ public class Slime_bomb : MonoBehaviour
         if (knockback == null)
         {
             Debug.LogWarning("Knockback component not found on the bomb!");
+        }
+        audioSource = GetComponent<AudioSource>();
+        // Initialize the Animator component
+        animator = GetComponent<Animator>();
+        if (animator == null)
+        {
+            Debug.LogWarning("Animator component not found on the bomb!");
         }
     }
 
@@ -25,6 +33,15 @@ public class Slime_bomb : MonoBehaviour
 
     public void Explode()
     {
+        // Update scale to (7, 7, current z) when exploding
+        transform.localScale = new Vector3(7f, 7f, transform.localScale.z);
+        audioSource.Play(); // Play explosion sound
+        // Trigger the explosion animation
+        if (animator != null)
+        {
+            animator.SetBool("IsExploding", true);
+        }
+
         // Create plus-shaped explosion pattern
         CheckAndPush(Vector2.up);
         CheckAndPush(Vector2.down);
@@ -38,8 +55,8 @@ public class Slime_bomb : MonoBehaviour
             Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
         }
 
-        // Destroy the bomb
-        Destroy(gameObject);
+        // Destroy the bomb after a short delay to allow animation to play
+        Destroy(gameObject, 1f);
     }
 
     private void CheckAndPush(Vector2 direction)
@@ -57,12 +74,12 @@ public class Slime_bomb : MonoBehaviour
                 Rigidbody2D playerRb = hit.GetComponent<Rigidbody2D>();
                 if (playerRb != null)
                 {
-                        // Check if player has a Knockback component
-                        Knockback playerKnockback = hit.GetComponent<Knockback>();
-                        if (playerKnockback != null)
-                        {
-                            playerKnockback.PlayKnockback(gameObject);
-                        }
+                    // Check if player has a Knockback component
+                    Knockback playerKnockback = hit.GetComponent<Knockback>();
+                    if (playerKnockback != null)
+                    {
+                        playerKnockback.PlayKnockback(gameObject);
+                    }
                 }
             }
         }

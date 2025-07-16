@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bombman\\characters\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|d:\\pru222\\sample\\vietda\\assets\\scripts\\bombman\\slime_bomb\\knockback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|D:\\PRU222\\Sample\\VietDa\\assets\\scripts\\bombman\\slime_bomb\\knockback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98150937-BF11-8D49-0706-646084F19AE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bombman\\slime_bomb\\knockback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,8 +50,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Bombman\\Slime_bomb\\Knockback.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAuwC8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T14:38:37.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T14:38:37.953Z"
             },
             {
               "$type": "Document",
@@ -61,7 +60,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bombman\\Characters\\Movement.cs",
               "ToolTip": "D:\\PRU222\\Sample\\VietDa\\Assets\\Scripts\\Bombman\\Characters\\Movement.cs",
               "RelativeToolTip": "Assets\\Scripts\\Bombman\\Characters\\Movement.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAEwEMAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAwE0AAACDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-05T14:32:43.37Z",
               "EditorCaption": ""
