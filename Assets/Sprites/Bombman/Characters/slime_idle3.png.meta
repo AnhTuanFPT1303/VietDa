@@ -240,6 +240,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1334,7 +1347,56 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slime_idle3_0: -5517731281570455347
+      slime_idle3_1: -2050009765582937728
+      slime_idle3_10: -7943576305482194304
+      slime_idle3_11: 3794568965809390562
+      slime_idle3_12: 4511594135219565431
+      slime_idle3_13: 6137060605798979329
+      slime_idle3_14: -1817571531786340958
+      slime_idle3_15: 9012764062946215546
+      slime_idle3_16: 2482321534933378755
+      slime_idle3_17: -748499487646691281
+      slime_idle3_18: 665480459256912204
+      slime_idle3_19: -4131122668907980944
+      slime_idle3_2: -4539306769393912458
+      slime_idle3_20: 8900411468066269543
+      slime_idle3_21: 7577377085695938668
+      slime_idle3_22: 4490379811293136126
+      slime_idle3_23: 2602628776372300543
+      slime_idle3_24: 4551011814097899816
+      slime_idle3_25: 1136198502486960568
+      slime_idle3_26: -1323357224063389779
+      slime_idle3_27: 6749300345446199237
+      slime_idle3_28: 5196333808961525198
+      slime_idle3_29: 985953539438026764
+      slime_idle3_3: 8115068287972778267
+      slime_idle3_30: -508642345699877407
+      slime_idle3_31: 7498230386358135675
+      slime_idle3_32: 8493502075004724904
+      slime_idle3_33: -5950094486085018257
+      slime_idle3_34: 7423992389365638498
+      slime_idle3_35: -885396047508166535
+      slime_idle3_36: -362034738633078922
+      slime_idle3_37: 3731052332342963812
+      slime_idle3_38: 1579951046737161886
+      slime_idle3_39: 3298011020930679593
+      slime_idle3_4: -8637911700252388008
+      slime_idle3_40: -3097483100521095319
+      slime_idle3_41: -7974061967131692913
+      slime_idle3_42: -4643848714312536070
+      slime_idle3_43: 1016200737787955432
+      slime_idle3_44: -3085497383513594462
+      slime_idle3_45: -7302558962585426020
+      slime_idle3_46: 7675219541458633514
+      slime_idle3_47: 51020627223923840
+      slime_idle3_48: -8378464598345954854
+      slime_idle3_5: -4942572773964682505
+      slime_idle3_6: -4946837063230594376
+      slime_idle3_7: -8089670852587893011
+      slime_idle3_8: -3390176593024606010
+      slime_idle3_9: -3400593434884554822
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Enemy
+  - Bomb
+  - Ground
+  - CanDestroy
+  - Lava
   layers:
   - Default
   - TransparentFX

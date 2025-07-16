@@ -19,7 +19,7 @@ public class Movement : MonoBehaviour
     private float airGravity = 35;
     public bool isBeingKnockbacked = false; // Flag controlled by Knockback script
 
-
+    public int maxBombs = 1; // Maximum bombs player can place
     void Start()
     {
         playerCollider = GetComponent<BoxCollider2D>(); 
@@ -84,6 +84,18 @@ public class Movement : MonoBehaviour
     {
         if (Keyboard.current.jKey.wasPressedThisFrame)
         {
+            if (!IsGrounded())
+            {
+                Debug.Log("Is not grounded");
+                return;
+            }
+
+            if (placedBombs.Count >= maxBombs)
+            {
+                Debug.Log("MaxBomb");
+                return;
+            }
+
             // Get the player's current position
             Vector2 playerPosition = transform.position;
             
