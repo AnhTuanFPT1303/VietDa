@@ -22,7 +22,10 @@ public class Movement : MonoBehaviour
     private AnimationCurve fallCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
     [SerializeField]
     private float fallDuration = 2f; // How long the full fall cycle is (tweak as needed)
+<<<<<<< HEAD
     private bool canPlace = true;
+=======
+>>>>>>> 341dbe33c91b84dcdcd3dc52aab20b7e5cef1228
 
     private bool isFallingSmoothly = false;
     private float fallElapsed = 0f;
