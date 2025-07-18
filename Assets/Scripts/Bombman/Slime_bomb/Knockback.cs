@@ -6,19 +6,22 @@ public class Knockback : MonoBehaviour
 {
     [SerializeField]
     private Rigidbody2D rb;
-    [SerializeField]
-    private float strength = 20.0f, delay = 0.2f;
+    const float strength = 22.0f, delay = 0.2f;
     public UnityEvent OnBegin, OnDone;
+    [SerializeField]
+    private AnimationCurve knockbackCurve = AnimationCurve.EaseInOut(0, 1, 1, 0);
+    [SerializeField]
+    private float knockbackDuration = 0.5f;
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void PlayKnockback(GameObject sender)
@@ -34,9 +37,9 @@ public class Knockback : MonoBehaviour
         }
 
         Vector2 direction = (transform.position - sender.transform.position).normalized;
-        rb.AddForce(direction * strength, ForceMode2D.Impulse);
-        StartCoroutine(Reset());
+        StartCoroutine(SmoothKnockback(direction));
     }
+
 
     private IEnumerator Reset()
     {
@@ -52,5 +55,33 @@ public class Knockback : MonoBehaviour
 
         OnDone?.Invoke();
     }
+
+    private IEnumerator SmoothKnockback(Vector2 direction)
+    {
+        float elapsed = 0f;
+
+        while (elapsed < knockbackDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / knockbackDuration;
+
+            float forceFactor = knockbackCurve.Evaluate(t);
+            rb.linearVelocity = direction * strength * forceFactor;
+
+            yield return null;
+        }
+
+        rb.linearVelocity = Vector2.zero;
+
+        // Reset flag
+        Movement movement = GetComponent<Movement>();
+        if (movement != null)
+        {
+            movement.isBeingKnockbacked = false;
+        }
+
+        OnDone?.Invoke();
+    }
+
 
 }

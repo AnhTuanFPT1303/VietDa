@@ -10,8 +10,6 @@ public class Slime_bomb : MonoBehaviour
     public float pushForce = 20f;           // Lực đẩy người chơi
     public float explosionRadius = 1f;      // Explosion radius in tiles
     public int pushDistance = 7;            // How many blocks to push the player
-    public float pushForce = 20f;           // Force to push players
-    public GameObject explosionEffectPrefab; // Visual effect for explosion
     private Knockback knockback;
     private Animator animator;
     AudioSource audioSource;
@@ -32,11 +30,6 @@ public class Slime_bomb : MonoBehaviour
         }
     }
 
-    // Hàm này được gọi khi script được khởi tạo
-    void Start()
-    {
-        // Bạn có thể thêm các khởi tạo khác ở đây nếu cần
-    }
 
     /// <summary>
     /// Kích hoạt vụ nổ. Hàm này sẽ được gọi từ một script khác (ví dụ: khi người chơi đặt bom).
@@ -49,31 +42,25 @@ public class Slime_bomb : MonoBehaviour
         // Đẩy lùi người chơi trong bán kính
         PushPlayersInRadius();
 
+        // Set the bomb's Rigidbody2D to kinematic before explosion
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.bodyType = RigidbodyType2D.Kinematic;
+        }
+
         // Hiển thị hiệu ứng nổ nếu có
         // Update scale to (7, 7, current z) when exploding
         transform.localScale = new Vector3(7f, 7f, transform.localScale.z);
+        audioSource.time = 0.2f;
         audioSource.Play(); // Play explosion sound
         // Trigger the explosion animation
         if (animator != null)
         {
             animator.SetBool("IsExploding", true);
         }
-
-        // Create plus-shaped explosion pattern
-        CheckAndPush(Vector2.up);
-        CheckAndPush(Vector2.down);
-        CheckAndPush(Vector2.left);
-        CheckAndPush(Vector2.right);
-        CheckAndPush(Vector2.zero); // Center point
-
-        // Show explosion effect
-        if (explosionEffectPrefab != null)
-        {
-            Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
-        }
-
         // Destroy the bomb after a short delay to allow animation to play
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 0.7f);
     }
 
     /// <summary>
@@ -116,23 +103,44 @@ public class Slime_bomb : MonoBehaviour
     /// </summary>
     private void PushPlayersInRadius()
     {
-        // Chuyển đổi bán kính từ ô gạch sang đơn vị của thế giới game
         float worldRadius = explosionTileRadius + 0.5f;
-
-        // Tìm tất cả các collider trong phạm vi nổ
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, worldRadius);
 
         foreach (Collider2D hit in colliders)
         {
             if (hit.CompareTag("Player"))
             {
+                Vector2 toTarget = hit.transform.position - transform.position;
+
+                Vector3 fakeSenderPosition = transform.position;
+
+                if (Mathf.Abs(toTarget.x) > Mathf.Abs(toTarget.y))
+                {
+                    // Horizontal knockback only
+                    fakeSenderPosition.y = hit.transform.position.y;
+                }
+                else
+                {
+                    // Vertical knockback only
+                    fakeSenderPosition.x = hit.transform.position.x;
+                }
+
+                // Create a temporary GameObject to simulate sender position
+                GameObject fakeSender = new GameObject("FakeSender");
+                fakeSender.transform.position = fakeSenderPosition;
+
                 Knockback playerKnockback = hit.GetComponent<Knockback>();
                 if (playerKnockback != null)
                 {
-                    playerKnockback.PlayKnockback(gameObject);
+                    playerKnockback.PlayKnockback(fakeSender);
                 }
+
+                // Cleanup the fake sender
+                GameObject.Destroy(fakeSender);
             }
         }
+
+
     }
 
     /// <summary>

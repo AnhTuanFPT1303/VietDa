@@ -18,6 +18,14 @@ public class Movement : MonoBehaviour
     private float normalGravity = 3;
     private float airGravity = 35;
     public bool isBeingKnockbacked = false; // Flag controlled by Knockback script
+    [SerializeField]
+    private AnimationCurve fallCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
+    [SerializeField]
+    private float fallDuration = 2f; // How long the full fall cycle is (tweak as needed)
+    private bool canPlace = true;
+
+    private bool isFallingSmoothly = false;
+    private float fallElapsed = 0f;
 
     void Start()
     {
@@ -60,17 +68,40 @@ public class Movement : MonoBehaviour
     {
         if (isBeingKnockbacked)
         {
-            rb.gravityScale = 0; // Disable gravity during bomb knockback
+            rb.gravityScale = 0; // Disable normal gravity during knockback
+            isFallingSmoothly = false; // Stop fall control if knockback happens
+            fallElapsed = 0f;
         }
         else if (!IsGrounded())
         {
-            rb.gravityScale = airGravity; // Use air gravity when off the ground
+            SmoothFall();
         }
         else
         {
-            rb.gravityScale = normalGravity; // Use normal gravity when on the ground
+            rb.gravityScale = 0; // Disable Unity gravity because we control Y manually
+            isFallingSmoothly = false;
+            fallElapsed = 0f;
         }
     }
+
+    private void SmoothFall()
+    {
+        if (!isFallingSmoothly)
+        {
+            isFallingSmoothly = true;
+            fallElapsed = 0f;
+        }
+
+        fallElapsed += Time.deltaTime;
+        float t = Mathf.Clamp01(fallElapsed / fallDuration);
+
+        float fallSpeed = fallCurve.Evaluate(t) * airGravity; // Use curve to control speed
+
+        Vector2 velocity = rb.linearVelocity;
+        velocity.y = -fallSpeed; // Set fall speed directly
+        rb.linearVelocity = velocity;
+    }
+
 
     // Use a BoxCast downward from the player's collider to determine ground
     private bool IsGrounded()
@@ -85,17 +116,18 @@ public class Movement : MonoBehaviour
     {
         if (!IsGrounded())
             return;
-
         if (Keyboard.current.jKey.wasPressedThisFrame)
         {
+            if (!canPlace) return; // Prevent placing if already placed a bomb
             // Get the player's current position
             Vector2 playerPosition = transform.position;
 
             // Spawn bomb at player's position
             GameObject newBomb = Instantiate(bombObject, playerPosition, Quaternion.identity);
-
+            canPlace = false;
             // Add bomb to our list to track it
             placedBombs.Add(newBomb);
+
 
             // Calculate position above the bomb based on collider sizes
             float playerHeight = playerCollider.bounds.size.y;
@@ -111,9 +143,6 @@ public class Movement : MonoBehaviour
             // Move player to position above bomb (with slight offset to prevent collision)
             Vector2 newPosition = playerPosition + new Vector2(0, (bombHeight + playerHeight) / 2);
             transform.position = newPosition;
-
-            // Add a small upward impulse to make it feel more natural
-            rb.AddForce(Vector2.up * 5f, ForceMode2D.Impulse);
         }
 
         if (Keyboard.current.kKey.wasPressedThisFrame)
@@ -131,6 +160,7 @@ public class Movement : MonoBehaviour
                     }
                 }
             }
+            canPlace = true;
 
             // Clear the list since all bombs have been detonated
             placedBombs.Clear();
