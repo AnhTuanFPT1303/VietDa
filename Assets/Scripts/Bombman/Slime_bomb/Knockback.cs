@@ -15,13 +15,13 @@ public class Knockback : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void PlayKnockback(GameObject sender)
@@ -82,6 +82,4 @@ public class Knockback : MonoBehaviour
 
         OnDone?.Invoke();
     }
-
-
 }

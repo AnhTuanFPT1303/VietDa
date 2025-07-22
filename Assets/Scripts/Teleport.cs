@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class BidirectionalTeleporter : MonoBehaviour
 {
@@ -85,7 +86,11 @@ public class BidirectionalTeleporter : MonoBehaviour
     private void TeleportTo(Transform player, Transform destination, Camera camToEnable, Camera camToDisable)
     {
         player.position = destination.position;
-        if (camToEnable != null) camToEnable.gameObject.SetActive(true);
+        if (camToEnable != null)
+        {
+            camToEnable.gameObject.SetActive(true);
+            GameManager.currentActiveCamera = camToEnable; // Lưu camera hiện tại
+        }
         if (camToDisable != null) camToDisable.gameObject.SetActive(false);
     }
 }

@@ -23,6 +23,8 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private float fallDuration = 2f; // How long the full fall cycle is (tweak as needed)
 
+    private bool canPlace = true;
+    
     private bool isFallingSmoothly = false;
     private float fallElapsed = 0f;
 
@@ -115,17 +117,18 @@ public class Movement : MonoBehaviour
     {
         if (!IsGrounded())
             return;
-
         if (Keyboard.current.jKey.wasPressedThisFrame)
         {
+            if (!canPlace) return; // Prevent placing if already placed a bomb
             // Get the player's current position
             Vector2 playerPosition = transform.position;
 
             // Spawn bomb at player's position
             GameObject newBomb = Instantiate(bombObject, playerPosition, Quaternion.identity);
-
+            canPlace = false;
             // Add bomb to our list to track it
             placedBombs.Add(newBomb);
+
 
             // Calculate position above the bomb based on collider sizes
             float playerHeight = playerCollider.bounds.size.y;
@@ -158,6 +161,7 @@ public class Movement : MonoBehaviour
                     }
                 }
             }
+            canPlace = true;
 
             // Clear the list since all bombs have been detonated
             placedBombs.Clear();

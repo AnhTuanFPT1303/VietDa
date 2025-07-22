@@ -42,6 +42,13 @@ public class Slime_bomb : MonoBehaviour
         // Đẩy lùi người chơi trong bán kính
         PushPlayersInRadius();
 
+        // Set the bomb's Rigidbody2D to kinematic before explosion
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.bodyType = RigidbodyType2D.Kinematic;
+        }
+
         // Hiển thị hiệu ứng nổ nếu có
         // Update scale to (7, 7, current z) when exploding
         transform.localScale = new Vector3(7f, 7f, transform.localScale.z);

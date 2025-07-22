@@ -1,0 +1,1042 @@
+fileFormatVersion: 2
+guid: 6500944dda99d3149a5554d38a0e50e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5207717560879360587
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_0
+  - first:
+      213: -3613966707614511815
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_1
+  - first:
+      213: -8144250139654667441
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_2
+  - first:
+      213: -350568214927456895
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_3
+  - first:
+      213: -6506627215767731260
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_4
+  - first:
+      213: 291231608116083432
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_5
+  - first:
+      213: -6556569746423704072
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_6
+  - first:
+      213: 780878728938447686
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_7
+  - first:
+      213: 5382665954097121777
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_8
+  - first:
+      213: 7868452687914773997
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_9
+  - first:
+      213: -437378835109647633
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_10
+  - first:
+      213: 7405467279131201687
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_11
+  - first:
+      213: -3509412848820592901
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_12
+  - first:
+      213: 5211826497131545458
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_13
+  - first:
+      213: -6939834026336987339
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_14
+  - first:
+      213: 5856049630727574976
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_15
+  - first:
+      213: 601914119166248763
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_16
+  - first:
+      213: -7107765546306076207
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_17
+  - first:
+      213: 2495252641859117024
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_18
+  - first:
+      213: 5843920991482870608
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_19
+  - first:
+      213: -5351251523809371738
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_20
+  - first:
+      213: 60885412389206355
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_21
+  - first:
+      213: -6177879018861110714
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_22
+  - first:
+      213: -6868939181504065190
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_23
+  - first:
+      213: -6461631329082513104
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_24
+  - first:
+      213: -1134544330755497518
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_25
+  - first:
+      213: -7804205278553771956
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_26
+  - first:
+      213: 2577341367653133399
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_27
+  - first:
+      213: 596504950706790779
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_28
+  - first:
+      213: 4150149348877012803
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_29
+  - first:
+      213: 2479272694354153410
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_30
+  - first:
+      213: 7935948361457598489
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_31
+  - first:
+      213: 2192609445517528595
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_32
+  - first:
+      213: -2162419575660401234
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_33
+  - first:
+      213: 7154374133549250643
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_34
+  - first:
+      213: 4346719325692613746
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_35
+  - first:
+      213: -2194535984841069558
+    second: StylizedUI_Floppy_1024x1024_SpriteSheet_01_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_0
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 3935
+        width: 337
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a27caa787854840800000000000000
+      internalID: 5207717560879360587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_1
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 3925
+        width: 337
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d8c825d6c98ddc0800000000000000
+      internalID: -3613966707614511815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_2
+      rect:
+        serializedVersion: 2
+        x: 3724
+        y: 3761
+        width: 521
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4345f7e5afc9fe80800000000000000
+      internalID: -8144250139654667441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_3
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 3603
+        width: 660
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 185c4bfd018822bf0800000000000000
+      internalID: -350568214927456895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_4
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 3592
+        width: 661
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c386465501d3b5a0800000000000000
+      internalID: -6506627215767731260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_5
+      rect:
+        serializedVersion: 2
+        x: 2878
+        y: 3243
+        width: 1343
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eaff15ca99aa0400800000000000000
+      internalID: 291231608116083432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_6
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 3270
+        width: 660
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f59757cd826205a0800000000000000
+      internalID: -6556569746423704072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_7
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 3260
+        width: 661
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 643e803111d36da00800000000000000
+      internalID: 780878728938447686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_8
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 2939
+        width: 1015
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f94c8aaa2213ba40800000000000000
+      internalID: 5382665954097121777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_9
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 2928
+        width: 1015
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deda023e70c523d60800000000000000
+      internalID: 7868452687914773997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_10
+      rect:
+        serializedVersion: 2
+        x: 2876
+        y: 2706
+        width: 1344
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feae30d444e1ee9f0800000000000000
+      internalID: -437378835109647633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_11
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 2610
+        width: 1015
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790d468214185c660800000000000000
+      internalID: 7405467279131201687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_12
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 2598
+        width: 1015
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe5bdf8b9f0c4fc0800000000000000
+      internalID: -3509412848820592901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_13
+      rect:
+        serializedVersion: 2
+        x: 2783
+        y: 2166
+        width: 1442
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2738e70f590245840800000000000000
+      internalID: 5211826497131545458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_14
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2273
+        width: 1097
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537d30cc8b1c0bf90800000000000000
+      internalID: -6939834026336987339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_15
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 2262
+        width: 1097
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5139acc1ed44150800000000000000
+      internalID: 5856049630727574976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_16
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 1935
+        width: 660
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b37423ac3bd6a5800800000000000000
+      internalID: 601914119166248763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_17
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1924
+        width: 661
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d18aa9e4e42c5d90800000000000000
+      internalID: -7107765546306076207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_18
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 1626
+        width: 1344
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef1edeae0be0a220800000000000000
+      internalID: 2495252641859117024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_19
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1595
+        width: 660
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05bf8c8ed27c91150800000000000000
+      internalID: 5843920991482870608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_20
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 1584
+        width: 661
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9139b57198cb5b0800000000000000
+      internalID: -5351251523809371738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_21
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1254
+        width: 660
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3593671c5fe48d000800000000000000
+      internalID: 60885412389206355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_22
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 1243
+        width: 661
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ad17f93c3c34aa0800000000000000
+      internalID: -6177879018861110714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_23
+      rect:
+        serializedVersion: 2
+        x: 2827
+        y: 1199
+        width: 1410
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5110b62530aca0a0800000000000000
+      internalID: -6868939181504065190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_24
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 918
+        width: 660
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03960889a8ca356a0800000000000000
+      internalID: -6461631329082513104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_25
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 907
+        width: 661
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1a26731f94140f0800000000000000
+      internalID: -1134544330755497518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_26
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 655
+        width: 432
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40f299c5a4e1b390800000000000000
+      internalID: -7804205278553771956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_27
+      rect:
+        serializedVersion: 2
+        x: 3208
+        y: 655
+        width: 432
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c62eb815e84c320800000000000000
+      internalID: 2577341367653133399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_28
+      rect:
+        serializedVersion: 2
+        x: 3768
+        y: 655
+        width: 432
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71e3ad9716374800800000000000000
+      internalID: 596504950706790779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_29
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 581
+        width: 660
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34f02a828da489930800000000000000
+      internalID: 4150149348877012803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_30
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 570
+        width: 661
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf0e483165286220800000000000000
+      internalID: 2479272694354153410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_31
+      rect:
+        serializedVersion: 2
+        x: 2588
+        y: 95
+        width: 521
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91006800df6222e60800000000000000
+      internalID: 7935948361457598489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_32
+      rect:
+        serializedVersion: 2
+        x: 3156
+        y: 95
+        width: 520
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e0d3b7ca6bd6e10800000000000000
+      internalID: 2192609445517528595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_33
+      rect:
+        serializedVersion: 2
+        x: 3723
+        y: 95
+        width: 521
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead29695ada8df1e0800000000000000
+      internalID: -2162419575660401234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_34
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 140
+        width: 278
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35832747e51794360800000000000000
+      internalID: 7154374133549250643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_35
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 140
+        width: 278
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 274db326236a25c30800000000000000
+      internalID: 4346719325692613746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StylizedUI_Floppy_1024x1024_SpriteSheet_01_36
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 140
+        width: 278
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c6cb026217b81e0800000000000000
+      internalID: -2194535984841069558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
