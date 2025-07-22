@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public static Camera currentActiveCamera;
 
     [Header("Thành phần cần liên kết")]
     public Transform player;
@@ -48,16 +50,27 @@ public class GameManager : MonoBehaviour
 
     public void RespawnPlayer()
     {
-        StartCoroutine(RespawnSequence());
+        StartCoroutine(RespawnAndReloadScene());
     }
 
-    private IEnumerator RespawnSequence()
+    private IEnumerator RespawnAndReloadScene()
     {
         yield return StartCoroutine(Fade(1f));
-        if (player != null)
+        // Lưu lại tên camera hiện tại (nếu có)
+        string cameraName = currentActiveCamera != null ? currentActiveCamera.name : null;
+        // Reload scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // Đợi scene load xong
+        yield return null;
+        // Sau khi load lại, tìm lại camera và kích hoạt nó
+        if (!string.IsNullOrEmpty(cameraName))
         {
-            player.position = lastCheckpointPosition;
-            player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            Camera foundCam = GameObject.Find(cameraName)?.GetComponent<Camera>();
+            if (foundCam != null)
+            {
+                foundCam.gameObject.SetActive(true);
+                currentActiveCamera = foundCam;
+            }
         }
         yield return StartCoroutine(Fade(0f));
     }

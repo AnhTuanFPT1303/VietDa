@@ -19,7 +19,7 @@ TagManager:
   - Enemy
   - Ground
   - Bomb
-  - 
+  - PauseGame
   - 
   - 
   - 
@@ -45,6 +45,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Pause Game
+    uniqueID: 72368871
     locked: 0
   - name: Background
     uniqueID: 763355545
