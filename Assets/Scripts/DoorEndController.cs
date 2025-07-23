@@ -23,17 +23,6 @@ public class DoorEndController : MonoBehaviour
             // Kích hoạt animation mở cửa
             anim.SetTrigger("Unlock");
             Debug.Log("Cửa đã được mở!");
-        }
-    }
-
-    // Hàm mới: Mở cửa và chuyển scene
-    public void OpenDoorAndLoadCompleteScene(Collider2D other)
-    {
-        if (other.CompareTag("Player") && GameManager.instance.hasKey && !isOpened)
-        {
-            isOpened = true;
-            anim.SetTrigger("Unlock");
-            Debug.Log("Cửa đã được mở! Chuyển sang scene Complete...");
             SceneManager.LoadScene("Complete");
         }
     }

@@ -3,12 +3,20 @@
 public class DoorController : MonoBehaviour
 {
     private Animator anim;
-    private bool isOpened = false; // Cờ để đảm bảo cửa chỉ mở một lần
+    private bool isOpened = false;
+    private Collider2D doorCollider;
 
     void Start()
     {
         // Tự động lấy Animator component trên cùng đối tượng
         anim = GetComponent<Animator>();
+        // Lấy Collider2D của cửa (giả sử là cùng đối tượng)
+        doorCollider = GetComponent<Collider2D>();
+        // Nếu chưa có chìa khóa, bật collider để chặn player
+        if (!GameManager.instance.hasKey)
+        {
+            doorCollider.enabled = true;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -22,6 +30,12 @@ public class DoorController : MonoBehaviour
             // Kích hoạt animation mở cửa
             anim.SetTrigger("Unlock");
             Debug.Log("Cửa đã được mở!");
+
+            // Tắt collider để player đi qua
+            if (doorCollider != null)
+            {
+                doorCollider.enabled = false;
+            }
         }
     }
 }
