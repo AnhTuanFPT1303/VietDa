@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public static Camera currentActiveCamera;
+    public static Checkpoint lastActivatedCheckpoint;
 
     [Header("Thành phần cần liên kết")]
     public Transform player;
@@ -16,9 +17,7 @@ public class GameManager : MonoBehaviour
     [Header("Cài đặt Hồi sinh")]
     public float fadeDuration = 0.5f;
 
-    public bool hasKey = false; // Biến để lưu trạng thái có chìa khóa
-    // ---------------------
-
+    public bool hasKey = false; 
     private Vector3 lastCheckpointPosition;
     private List<Checkpoint> allCheckpoints = new List<Checkpoint>();
 
@@ -53,27 +52,80 @@ public class GameManager : MonoBehaviour
         StartCoroutine(RespawnAndReloadScene());
     }
 
+    //private IEnumerator RespawnAndReloadScene()
+    //{
+    //    yield return StartCoroutine(Fade(1f));
+    //    string cameraName = currentActiveCamera != null ? currentActiveCamera.name : null;
+    //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    //    yield return null;
+    //    // Đặt lại vị trí player về checkpoint đã lưu
+    //    if (lastActivatedCheckpoint != null && player != null)
+    //    {
+    //        player.position = lastActivatedCheckpoint.transform.position;
+    //    }
+    //    // Kích hoạt lại camera
+    //    if (!string.IsNullOrEmpty(cameraName))
+    //    {
+    //        Camera foundCam = GameObject.Find(cameraName)?.GetComponent<Camera>();
+    //        if (foundCam != null)
+    //        {
+    //            foundCam.gameObject.SetActive(true);
+    //            currentActiveCamera = foundCam;
+    //        }
+    //    }
+    //    yield return StartCoroutine(Fade(0f));
+    //}
+
     private IEnumerator RespawnAndReloadScene()
     {
         yield return StartCoroutine(Fade(1f));
-        // Lưu lại tên camera hiện tại (nếu có)
-        string cameraName = currentActiveCamera != null ? currentActiveCamera.name : null;
-        // Reload scene
+
+        // Lưu thông tin trước khi load
+        Vector3 checkpointPos = lastActivatedCheckpoint != null ? lastActivatedCheckpoint.transform.position : Vector3.zero;
+        string checkpointCamName = lastActivatedCheckpoint?.checkpointCamera?.name;
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        // Đợi scene load xong
-        yield return null;
-        // Sau khi load lại, tìm lại camera và kích hoạt nó
-        if (!string.IsNullOrEmpty(cameraName))
+        yield return null; // Chờ 1 frame cho scene load
+
+        // 🔁 Gán lại player
+        player = GameObject.FindWithTag("Player")?.transform;
+
+        // 🔁 Gán lại checkpoint từ vị trí (nên trùng chính xác)
+        Checkpoint[] checkpoints = FindObjectsByType<Checkpoint>(FindObjectsSortMode.None);
+        foreach (var cp in checkpoints)
         {
-            Camera foundCam = GameObject.Find(cameraName)?.GetComponent<Camera>();
+            if (cp.transform.position == checkpointPos)
+            {
+                lastActivatedCheckpoint = cp;
+                cp.Activate();
+            }
+            else
+            {
+                cp.Deactivate();
+            }
+        }
+
+        // 🔁 Đặt lại vị trí player cuối cùng
+        if (player != null && lastActivatedCheckpoint != null)
+        {
+            player.position = lastActivatedCheckpoint.transform.position;
+        }
+
+        // 🔁 Kích hoạt camera từ tên đã lưu (nếu có)
+        if (!string.IsNullOrEmpty(checkpointCamName))
+        {
+            Camera foundCam = GameObject.Find(checkpointCamName)?.GetComponent<Camera>();
             if (foundCam != null)
             {
                 foundCam.gameObject.SetActive(true);
                 currentActiveCamera = foundCam;
             }
         }
+
         yield return StartCoroutine(Fade(0f));
     }
+
+
 
     private IEnumerator Fade(float targetAlpha)
     {
@@ -99,6 +151,13 @@ public class GameManager : MonoBehaviour
         }
         newCheckpoint.Activate();
         lastCheckpointPosition = newCheckpoint.transform.position;
+        lastActivatedCheckpoint = newCheckpoint; // Lưu checkpoint hiện tại
+
+        // Lưu camera hiện tại nếu có
+        if (Camera.main != null)
+        {
+            currentActiveCamera = Camera.main;
+        }
     }
 
     public void CollectKey()
